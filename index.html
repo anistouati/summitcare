@@ -6,17 +6,15 @@
     <title>SummitCare — Coaching. Caregiving. Confidence in Aging.</title>
     <meta
       name="description"
-      content="SummitCare connects families with trusted providers, and enables clinics to validate quality. Launching in Montreal (Westmount, Outremont, NDG)."
+      content="Trusted support for aging at home. Connecting families, trusted providers, and local clinics — starting in Montreal."
     />
     <meta name="theme-color" content="#0B1220" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Tailwind CDN (OK for GitHub Pages single-file launch page) -->
+    <!-- Tailwind CDN (fine for GitHub Pages single-page launch site) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -24,24 +22,10 @@
           extend: {
             fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
             colors: {
-              ink: {
-                950: "#0B1220",
-                900: "#0F1A2E",
-              },
-              cloud: {
-                50: "#FAFBFF",
-                100: "#F2F5FF",
-                200: "#E7ECFA",
-              },
-              gold: {
-                500: "#C8A96A",
-                600: "#B8924E",
-              },
-              slatey: {
-                500: "#6B7280",
-                600: "#4B5563",
-                700: "#374151",
-              },
+              ink: { 950: "#0B1220", 900: "#0F1A2E" },
+              cloud: { 50: "#FAFBFF", 100: "#F2F5FF", 200: "#E7ECFA" },
+              gold: { 500: "#C8A96A", 600: "#B8924E" },
+              slatey: { 500: "#6B7280", 600: "#4B5563", 700: "#374151" },
             },
             boxShadow: {
               soft: "0 10px 30px rgba(11, 18, 32, 0.10)",
@@ -54,7 +38,6 @@
     </script>
 
     <style>
-      /* Flat, premium, big-tech. No gradients. Minimal motion. */
       .focus-ring:focus {
         outline: none;
         box-shadow: 0 0 0 4px rgba(200, 169, 106, 0.28);
@@ -63,7 +46,7 @@
   </head>
 
   <body class="bg-cloud-50 text-ink-950">
-    <!-- Header -->
+    <!-- Header (simplified) -->
     <header class="sticky top-0 z-50 border-b border-cloud-200/70 bg-cloud-50/90 backdrop-blur">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -79,10 +62,9 @@
           </a>
 
           <nav class="hidden items-center gap-6 md:flex">
-            <a href="#for" class="text-sm font-medium text-slatey-700 hover:text-ink-950" data-i18n="nav_for">For families, providers, clinics</a>
-            <a href="#trust" class="text-sm font-medium text-slatey-700 hover:text-ink-950" data-i18n="nav_trust">Trust & safety</a>
+            <a href="#for" class="text-sm font-medium text-slatey-700 hover:text-ink-950" data-i18n="nav_for">For who</a>
+            <a href="#trust" class="text-sm font-medium text-slatey-700 hover:text-ink-950" data-i18n="nav_trust">Trust</a>
             <a href="#areas" class="text-sm font-medium text-slatey-700 hover:text-ink-950" data-i18n="nav_areas">Launch area</a>
-            <a href="#faq" class="text-sm font-medium text-slatey-700 hover:text-ink-950">FAQ</a>
           </nav>
 
           <div class="flex items-center gap-3">
@@ -116,18 +98,17 @@
         <!-- Mobile menu -->
         <div id="mobileNav" class="hidden border-t border-cloud-200/70 py-3 md:hidden">
           <div class="flex flex-col gap-2">
-            <a href="#for" class="rounded-xl px-3 py-2 text-sm font-medium text-slatey-700 hover:bg-cloud-100" data-i18n="nav_for">For families, providers, clinics</a>
-            <a href="#trust" class="rounded-xl px-3 py-2 text-sm font-medium text-slatey-700 hover:bg-cloud-100" data-i18n="nav_trust">Trust & safety</a>
+            <a href="#for" class="rounded-xl px-3 py-2 text-sm font-medium text-slatey-700 hover:bg-cloud-100" data-i18n="nav_for">For who</a>
+            <a href="#trust" class="rounded-xl px-3 py-2 text-sm font-medium text-slatey-700 hover:bg-cloud-100" data-i18n="nav_trust">Trust</a>
             <a href="#areas" class="rounded-xl px-3 py-2 text-sm font-medium text-slatey-700 hover:bg-cloud-100" data-i18n="nav_areas">Launch area</a>
-            <a href="#faq" class="rounded-xl px-3 py-2 text-sm font-medium text-slatey-700 hover:bg-cloud-100">FAQ</a>
             <a href="#cta" class="mt-2 inline-flex justify-center rounded-xl bg-ink-950 px-4 py-2 text-sm font-semibold text-cloud-50 shadow-soft" data-i18n="nav_cta">Join the launch</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Hero -->
     <main id="top">
+      <!-- HERO (short + direct) -->
       <section class="relative">
         <div class="mx-auto max-w-7xl px-4 pt-12 sm:px-6 sm:pt-16 lg:px-8 lg:pt-20">
           <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
@@ -137,14 +118,16 @@
                 <span data-i18n="hero_pill">Launching in Montreal — Westmount · Outremont · NDG</span>
               </div>
 
-              <h1 class="mt-5 text-4xl font-semibold tracking-tight text-ink-950 sm:text-5xl">
-                <span data-i18n="hero_h1a">Trusted support for aging</span><br class="hidden sm:block" />
-                <span data-i18n="hero_h1b">— built for families and providers.</span>
+              <h1 class="mt-5 text-4xl font-semibold tracking-tight text-ink-950 sm:text-5xl" data-i18n="hero_h1">
+                Trusted support for aging at home.
               </h1>
 
               <p class="mt-5 max-w-2xl text-base leading-relaxed text-slatey-700 sm:text-lg" data-i18n="hero_sub">
-                SummitCare connects families with vetted providers for non-medical support at home — and enables clinics to validate quality.
-                A premium experience designed for confidence, safety, and continuity.
+                Connecting families, trusted providers, and local clinics — starting in Montreal.
+              </p>
+
+              <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slatey-600" data-i18n="hero_sub2">
+                Non-medical support. Built for dignity, safety, and peace of mind.
               </p>
 
               <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -152,63 +135,45 @@
                   href="#cta"
                   class="focus-ring inline-flex items-center justify-center rounded-xl bg-ink-950 px-5 py-3 text-sm font-semibold text-cloud-50 shadow-soft hover:bg-ink-900"
                   data-i18n="hero_primary"
-                  >Join the launch</a
+                  >Join the SummitCare launch</a
                 >
-                <a
-                  href="#for"
-                  class="focus-ring inline-flex items-center justify-center rounded-xl border border-cloud-200 bg-cloud-50 px-5 py-3 text-sm font-semibold text-ink-950 hover:bg-cloud-100"
-                  data-i18n="hero_secondary"
-                  >See who it’s for</a
-                >
+
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-semibold text-slatey-700">
+                  <a class="hover:text-ink-950" href="#for" data-i18n="hero_link_f">For families</a>
+                  <span class="text-slatey-500">·</span>
+                  <a class="hover:text-ink-950" href="#for" data-i18n="hero_link_p">For providers</a>
+                  <span class="text-slatey-500">·</span>
+                  <a class="hover:text-ink-950" href="#for" data-i18n="hero_link_c">For clinics</a>
+                </div>
               </div>
 
               <div class="mt-8 flex flex-wrap gap-3 text-xs text-slatey-600">
                 <div class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1" data-i18n="hero_badge1">Bilingual (EN/FR)</div>
                 <div class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1" data-i18n="hero_badge2">Secure payments (Stripe)</div>
-                <div class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1" data-i18n="hero_badge3">Verified providers</div>
+                <div class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1" data-i18n="hero_badge3">Vetted providers</div>
               </div>
             </div>
 
-            <!-- Right card -->
+            <!-- Minimal right card: one definition, nothing more -->
             <div class="lg:col-span-5">
               <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-                <div class="flex items-start justify-between gap-3">
-                  <div>
-                    <div class="text-sm font-semibold text-ink-950" data-i18n="hero_card_title">What SummitCare offers</div>
-                    <div class="mt-1 text-sm text-slatey-700" data-i18n="hero_card_sub">
-                      A premium marketplace for non-medical aging support — designed to build trust.
-                    </div>
-                  </div>
-                  <span class="inline-flex items-center rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">
-                    <span class="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-gold-500"></span>
-                    <span data-i18n="hero_card_chip">Launch phase</span>
-                  </span>
-                </div>
+                <div class="text-sm font-semibold text-ink-950" data-i18n="what_title">What is SummitCare?</div>
+                <p class="mt-2 text-sm leading-relaxed text-slatey-700" data-i18n="what_body">
+                  A premium platform helping seniors stay supported at home — connecting families with vetted local providers, with optional clinic validation.
+                </p>
 
-                <div class="mt-6 space-y-3">
+                <div class="mt-5 grid gap-3 sm:grid-cols-3">
                   <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-4">
-                    <div class="text-xs font-semibold text-slatey-600" data-i18n="hero_point_1_label">For families</div>
-                    <div class="mt-1 text-sm font-semibold text-ink-950" data-i18n="hero_point_1_value">Find trusted help. Book with confidence.</div>
+                    <div class="text-xs font-semibold text-slatey-600" data-i18n="mini_1_label">Families</div>
+                    <div class="mt-1 text-sm font-semibold text-ink-950" data-i18n="mini_1_value">Peace of mind</div>
                   </div>
                   <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-4">
-                    <div class="text-xs font-semibold text-slatey-600" data-i18n="hero_point_2_label">For providers</div>
-                    <div class="mt-1 text-sm font-semibold text-ink-950" data-i18n="hero_point_2_value">Grow your practice with structured demand.</div>
+                    <div class="text-xs font-semibold text-slatey-600" data-i18n="mini_2_label">Providers</div>
+                    <div class="mt-1 text-sm font-semibold text-ink-950" data-i18n="mini_2_value">Trusted visibility</div>
                   </div>
                   <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-4">
-                    <div class="text-xs font-semibold text-slatey-600" data-i18n="hero_point_3_label">For clinics</div>
-                    <div class="mt-1 text-sm font-semibold text-ink-950" data-i18n="hero_point_3_value">Validate quality and extend continuity of care.</div>
-                  </div>
-
-                  <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-4">
-                    <div class="text-xs font-semibold text-slatey-600" data-i18n="hero_services_label">Support types</div>
-                    <div class="mt-2 flex flex-wrap gap-2">
-                      <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700" data-i18n="svc_1">Tech help</span>
-                      <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700" data-i18n="svc_2">Mobility</span>
-                      <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700" data-i18n="svc_3">Companionship</span>
-                      <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700" data-i18n="svc_4">Escort support</span>
-                      <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700" data-i18n="svc_5">Wellness coaching</span>
-                      <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700" data-i18n="svc_6">Home support</span>
-                    </div>
+                    <div class="text-xs font-semibold text-slatey-600" data-i18n="mini_3_label">Clinics</div>
+                    <div class="mt-1 text-sm font-semibold text-ink-950" data-i18n="mini_3_value">Continuity</div>
                   </div>
                 </div>
               </div>
@@ -219,136 +184,81 @@
         </div>
       </section>
 
-      <!-- For who -->
+      <!-- WHO IT'S FOR (3 concise cards, outcome-led) -->
       <section id="for" class="py-12 sm:py-16">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl" data-i18n="for_title">
-            A launch built for three audiences
-          </h2>
+          <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl" data-i18n="for_title">For families, providers, and clinics</h2>
           <p class="mt-3 max-w-2xl text-base text-slatey-700" data-i18n="for_sub">
-            SummitCare is designed as a premium ecosystem: families get reliable help, providers get structured growth, and clinics help validate quality.
+            Three stakeholders. One standard: trust.
           </p>
 
           <div class="mt-8 grid gap-4 lg:grid-cols-3">
-            <!-- Families -->
             <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <div class="flex items-center justify-between">
-                <div class="text-sm font-semibold text-ink-950" data-i18n="fam_title">For families</div>
-                <span class="text-xs font-semibold text-slatey-600" data-i18n="fam_chip">Clients</span>
-              </div>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="fam_body">
-                Book vetted support for a parent or loved one — with clear scheduling, secure payment, and respectful care.
+              <div class="text-sm font-semibold text-ink-950" data-i18n="card_f_title">For Families</div>
+              <p class="mt-2 text-sm text-slatey-700" data-i18n="card_f_body">
+                Find reliable, non-medical support for aging parents — without uncertainty.
               </p>
-              <ul class="mt-4 space-y-2 text-sm text-slatey-700">
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="fam_1">Discover trusted providers nearby</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="fam_2">Book and manage sessions easily</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="fam_3">Secure payment and communication</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="fam_4">Household-friendly experience (family-assisted)</span></li>
-              </ul>
             </div>
 
-            <!-- Providers -->
             <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <div class="flex items-center justify-between">
-                <div class="text-sm font-semibold text-ink-950" data-i18n="pro_title">For providers</div>
-                <span class="text-xs font-semibold text-slatey-600" data-i18n="pro_chip">Coaches & caregivers</span>
-              </div>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="pro_body">
-                Join a premium marketplace designed to help trusted providers grow with better visibility and better client alignment.
+              <div class="text-sm font-semibold text-ink-950" data-i18n="card_p_title">For Providers</div>
+              <p class="mt-2 text-sm text-slatey-700" data-i18n="card_p_body">
+                Join a trusted local platform designed for professional caregivers and coaches.
               </p>
-              <ul class="mt-4 space-y-2 text-sm text-slatey-700">
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="pro_1">Showcase your services and experience</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="pro_2">Publish availability and receive bookings</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="pro_3">Professional onboarding and verification options</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="pro_4">Reliable payments and support</span></li>
-              </ul>
             </div>
 
-            <!-- Clinics -->
             <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <div class="flex items-center justify-between">
-                <div class="text-sm font-semibold text-ink-950" data-i18n="cli_title">For clinics</div>
-                <span class="text-xs font-semibold text-slatey-600" data-i18n="cli_chip">Partners</span>
-              </div>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="cli_body">
-                Strengthen continuity beyond the clinic by validating trusted providers and offering families a safe path to non-medical support.
+              <div class="text-sm font-semibold text-ink-950" data-i18n="card_c_title">For Clinics</div>
+              <p class="mt-2 text-sm text-slatey-700" data-i18n="card_c_body">
+                Extend continuity beyond the clinic by validating trusted providers.
               </p>
-              <ul class="mt-4 space-y-2 text-sm text-slatey-700">
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="cli_1">Validate trusted providers (quality signal)</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="cli_2">Offer families a trusted recommendation path</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="cli_3">Extend continuity for seniors between visits</span></li>
-                <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-gold-500"></span><span data-i18n="cli_4">Lightweight partnership model</span></li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Trust & Safety -->
+      <!-- TRUST (very short) -->
       <section id="trust" class="py-12 sm:py-16">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid gap-8 lg:grid-cols-12">
-            <div class="lg:col-span-5">
-              <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl" data-i18n="trust_title">Trust & safety</h2>
-              <p class="mt-4 text-base leading-relaxed text-slatey-700" data-i18n="trust_sub">
-                SummitCare is designed around trust: vetted providers, secure payments, and a respectful experience for seniors and families.
-              </p>
-            </div>
-
-            <div class="lg:col-span-7">
-              <div class="grid gap-4 sm:grid-cols-2">
-                <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-                  <div class="text-sm font-semibold text-ink-950" data-i18n="trust_1_title">Provider vetting</div>
-                  <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_1_body">
-                    Screening, references, and onboarding safeguards to maintain quality.
-                  </p>
-                </div>
-                <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-                  <div class="text-sm font-semibold text-ink-950" data-i18n="trust_2_title">Clinic validation (optional)</div>
-                  <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_2_body">
-                    Clinics can validate trusted providers to help families choose with confidence.
-                  </p>
-                </div>
-                <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-                  <div class="text-sm font-semibold text-ink-950" data-i18n="trust_3_title">Secure payments</div>
-                  <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_3_body">
-                    Stripe-powered checkout and receipts for transparency and security.
-                  </p>
-                </div>
-                <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-                  <div class="text-sm font-semibold text-ink-950" data-i18n="trust_4_title">Respect-first experience</div>
-                  <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_4_body">
-                    Designed for seniors: clear communication, family-assisted booking, and professionalism.
-                  </p>
-                </div>
+          <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-8 shadow-card">
+            <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl" data-i18n="trust_title">Built on trust</h2>
+            <div class="mt-6 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-5">
+                <div class="text-sm font-semibold text-ink-950" data-i18n="trust_1_title">Vetted providers</div>
+                <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_1_body">Carefully screened for quality and professionalism.</p>
+              </div>
+              <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-5">
+                <div class="text-sm font-semibold text-ink-950" data-i18n="trust_2_title">Optional clinic validation</div>
+                <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_2_body">A confidence layer for families who want it.</p>
+              </div>
+              <div class="rounded-xl border border-cloud-200 bg-cloud-50 p-5">
+                <div class="text-sm font-semibold text-ink-950" data-i18n="trust_3_title">Secure experience</div>
+                <p class="mt-2 text-sm text-slatey-700" data-i18n="trust_3_body">Clear communication and Stripe-secured payments.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Launch area -->
+      <!-- LAUNCH AREA (short) -->
       <section id="areas" class="py-12 sm:py-16">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-8 shadow-card">
-            <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-              <div>
-                <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl" data-i18n="areas_title">Launching in Montreal</h2>
-                <p class="mt-3 max-w-2xl text-base text-slatey-700" data-i18n="areas_sub">
-                  We’re starting with a premium, neighbourhood-based launch and expanding as we grow trusted supply and outcomes.
-                </p>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">Westmount</span>
-                <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">Outremont</span>
-                <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">NDG</span>
-              </div>
+            <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl" data-i18n="areas_title">Launching in Montreal</h2>
+            <p class="mt-3 max-w-2xl text-base text-slatey-700" data-i18n="areas_sub">
+              Starting in Westmount, Outremont, and NDG — neighbourhood-first, premium rollout.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">Westmount</span>
+              <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">Outremont</span>
+              <span class="rounded-full border border-cloud-200 bg-cloud-50 px-3 py-1 text-xs font-semibold text-slatey-700">NDG</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CTA -->
+      <!-- CTA (strong close, minimal) -->
       <section id="cta" class="py-12 sm:py-16">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="rounded-xl2 border border-cloud-200 bg-ink-950 p-8 text-cloud-50 shadow-soft sm:p-10">
@@ -356,18 +266,15 @@
               <div class="lg:col-span-7">
                 <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl" data-i18n="cta_title">Join the SummitCare launch</h2>
                 <p class="mt-3 max-w-2xl text-sm leading-relaxed text-cloud-100" data-i18n="cta_sub">
-                  Tell us who you are and we’ll reach out with next steps. Early access is limited during launch.
+                  Early access is limited during launch. Tell us who you are — we’ll reach out with next steps.
                 </p>
-
-                <div class="mt-6 flex flex-wrap gap-2 text-xs text-cloud-100">
-                  <span class="rounded-full border border-cloud-200/20 bg-white/5 px-3 py-1" data-i18n="cta_badge1">Bilingual (EN/FR)</span>
-                  <span class="rounded-full border border-cloud-200/20 bg-white/5 px-3 py-1" data-i18n="cta_badge2">Premium launch in Montreal</span>
-                  <span class="rounded-full border border-cloud-200/20 bg-white/5 px-3 py-1" data-i18n="cta_badge3">Secure Stripe payments</span>
+                <div class="mt-6 text-xs font-semibold text-cloud-100/90" data-i18n="cta_audiences">
+                  Families · Providers · Clinics welcome
                 </div>
               </div>
 
               <div class="lg:col-span-5">
-                <!-- Replace placeholder submit with real endpoint -->
+                <!-- Replace placeholder submit with a real endpoint -->
                 <form class="rounded-xl2 border border-cloud-200/20 bg-white/5 p-5">
                   <div class="grid gap-3">
                     <div>
@@ -404,16 +311,6 @@
                       </select>
                     </div>
 
-                    <div>
-                      <label class="text-xs font-semibold text-cloud-100" for="note" data-i18n="cta_note_label">Message (optional)</label>
-                      <textarea
-                        id="note"
-                        rows="3"
-                        placeholder="Tell us what you’re looking for."
-                        class="focus-ring mt-1 w-full rounded-xl border border-cloud-200/20 bg-ink-950 px-3 py-2 text-sm text-cloud-50 placeholder:text-cloud-100/60"
-                      ></textarea>
-                    </div>
-
                     <button
                       type="button"
                       onclick="fakeSubmit()"
@@ -424,48 +321,12 @@
                     </button>
 
                     <p class="text-xs text-cloud-100/80" data-i18n="cta_disclaimer">
-                      This form is a placeholder. Connect it to your waitlist endpoint (Formspree/Airtable/Google Forms).
+                      This form is a placeholder. Connect it to your waitlist endpoint.
                     </p>
                   </div>
                 </form>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section id="faq" class="py-12 sm:py-16">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-semibold tracking-tight text-ink-950 sm:text-3xl">FAQ</h2>
-          <div class="mt-8 grid gap-4 lg:grid-cols-2">
-            <details class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <summary class="cursor-pointer text-sm font-semibold text-ink-950" data-i18n="faq_1_q">What kind of services are offered?</summary>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="faq_1_a">
-                SummitCare focuses on non-medical support at home: tech help, mobility support, companionship, escort support, wellness coaching, and practical home help.
-              </p>
-            </details>
-
-            <details class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <summary class="cursor-pointer text-sm font-semibold text-ink-950" data-i18n="faq_2_q">Is SummitCare medical care?</summary>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="faq_2_a">
-                No. SummitCare is not a medical service. We focus on non-medical continuity support that helps seniors stay safe and supported at home.
-              </p>
-            </details>
-
-            <details class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <summary class="cursor-pointer text-sm font-semibold text-ink-950" data-i18n="faq_3_q">How do providers join?</summary>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="faq_3_a">
-                Providers can request access, complete onboarding, and publish their services and availability. Verification may apply depending on launch capacity.
-              </p>
-            </details>
-
-            <details class="rounded-xl2 border border-cloud-200 bg-cloud-50 p-6 shadow-card">
-              <summary class="cursor-pointer text-sm font-semibold text-ink-950" data-i18n="faq_4_q">How do clinics participate?</summary>
-              <p class="mt-3 text-sm text-slatey-700" data-i18n="faq_4_a">
-                Clinics can partner during launch to validate trusted providers and offer families a safe path to non-medical support. We keep this lightweight.
-              </p>
-            </details>
           </div>
         </div>
       </section>
@@ -498,6 +359,7 @@
     </main>
 
     <script>
+      // Minimal JS: mobile menu + bilingual toggle + placeholder submit
       document.getElementById("year").textContent = new Date().getFullYear();
 
       const menuBtn = document.getElementById("menuBtn");
@@ -505,215 +367,136 @@
       menuBtn?.addEventListener("click", () => mobileNav.classList.toggle("hidden"));
 
       function fakeSubmit() {
-        alert("Placeholder form. Wire this to a waitlist endpoint (Formspree/Airtable/Google Forms).");
+        alert("Placeholder form. Wire this to your waitlist endpoint (Formspree/Airtable/Google Forms).");
       }
 
       const i18n = {
         en: {
           tagline: "Coaching. Caregiving. Confidence in aging.",
-          nav_for: "For families, providers, clinics",
-          nav_trust: "Trust & safety",
+          nav_for: "For who",
+          nav_trust: "Trust",
           nav_areas: "Launch area",
           nav_cta: "Join the launch",
+
           hero_pill: "Launching in Montreal — Westmount · Outremont · NDG",
-          hero_h1a: "Trusted support for aging",
-          hero_h1b: "— built for families and providers.",
-          hero_sub:
-            "SummitCare connects families with vetted providers for non-medical support at home — and enables clinics to validate quality. A premium experience designed for confidence, safety, and continuity.",
-          hero_primary: "Join the launch",
-          hero_secondary: "See who it’s for",
+          hero_h1: "Trusted support for aging at home.",
+          hero_sub: "Connecting families, trusted providers, and local clinics — starting in Montreal.",
+          hero_sub2: "Non-medical support. Built for dignity, safety, and peace of mind.",
+          hero_primary: "Join the SummitCare launch",
+          hero_link_f: "For families",
+          hero_link_p: "For providers",
+          hero_link_c: "For clinics",
           hero_badge1: "Bilingual (EN/FR)",
           hero_badge2: "Secure payments (Stripe)",
-          hero_badge3: "Verified providers",
-          hero_card_title: "What SummitCare offers",
-          hero_card_sub: "A premium marketplace for non-medical aging support — designed to build trust.",
-          hero_card_chip: "Launch phase",
-          hero_point_1_label: "For families",
-          hero_point_1_value: "Find trusted help. Book with confidence.",
-          hero_point_2_label: "For providers",
-          hero_point_2_value: "Grow your practice with structured demand.",
-          hero_point_3_label: "For clinics",
-          hero_point_3_value: "Validate quality and extend continuity of care.",
-          hero_services_label: "Support types",
-          svc_1: "Tech help",
-          svc_2: "Mobility",
-          svc_3: "Companionship",
-          svc_4: "Escort support",
-          svc_5: "Wellness coaching",
-          svc_6: "Home support",
-          for_title: "A launch built for three audiences",
-          for_sub:
-            "SummitCare is designed as a premium ecosystem: families get reliable help, providers get structured growth, and clinics help validate quality.",
-          fam_title: "For families",
-          fam_chip: "Clients",
-          fam_body:
-            "Book vetted support for a parent or loved one — with clear scheduling, secure payment, and respectful care.",
-          fam_1: "Discover trusted providers nearby",
-          fam_2: "Book and manage sessions easily",
-          fam_3: "Secure payment and communication",
-          fam_4: "Household-friendly experience (family-assisted)",
-          pro_title: "For providers",
-          pro_chip: "Coaches & caregivers",
-          pro_body:
-            "Join a premium marketplace designed to help trusted providers grow with better visibility and better client alignment.",
-          pro_1: "Showcase your services and experience",
-          pro_2: "Publish availability and receive bookings",
-          pro_3: "Professional onboarding and verification options",
-          pro_4: "Reliable payments and support",
-          cli_title: "For clinics",
-          cli_chip: "Partners",
-          cli_body:
-            "Strengthen continuity beyond the clinic by validating trusted providers and offering families a safe path to non-medical support.",
-          cli_1: "Validate trusted providers (quality signal)",
-          cli_2: "Offer families a trusted recommendation path",
-          cli_3: "Extend continuity for seniors between visits",
-          cli_4: "Lightweight partnership model",
-          trust_title: "Trust & safety",
-          trust_sub:
-            "SummitCare is designed around trust: vetted providers, secure payments, and a respectful experience for seniors and families.",
-          trust_1_title: "Provider vetting",
-          trust_1_body: "Screening, references, and onboarding safeguards to maintain quality.",
-          trust_2_title: "Clinic validation (optional)",
-          trust_2_body: "Clinics can validate trusted providers to help families choose with confidence.",
-          trust_3_title: "Secure payments",
-          trust_3_body: "Stripe-powered checkout and receipts for transparency and security.",
-          trust_4_title: "Respect-first experience",
-          trust_4_body: "Designed for seniors: clear communication, family-assisted booking, and professionalism.",
+          hero_badge3: "Vetted providers",
+
+          what_title: "What is SummitCare?",
+          what_body:
+            "A premium platform helping seniors stay supported at home — connecting families with vetted local providers, with optional clinic validation.",
+          mini_1_label: "Families",
+          mini_1_value: "Peace of mind",
+          mini_2_label: "Providers",
+          mini_2_value: "Trusted visibility",
+          mini_3_label: "Clinics",
+          mini_3_value: "Continuity",
+
+          for_title: "For families, providers, and clinics",
+          for_sub: "Three stakeholders. One standard: trust.",
+          card_f_title: "For Families",
+          card_f_body: "Find reliable, non-medical support for aging parents — without uncertainty.",
+          card_p_title: "For Providers",
+          card_p_body: "Join a trusted local platform designed for professional caregivers and coaches.",
+          card_c_title: "For Clinics",
+          card_c_body: "Extend continuity beyond the clinic by validating trusted providers.",
+
+          trust_title: "Built on trust",
+          trust_1_title: "Vetted providers",
+          trust_1_body: "Carefully screened for quality and professionalism.",
+          trust_2_title: "Optional clinic validation",
+          trust_2_body: "A confidence layer for families who want it.",
+          trust_3_title: "Secure experience",
+          trust_3_body: "Clear communication and Stripe-secured payments.",
+
           areas_title: "Launching in Montreal",
-          areas_sub:
-            "We’re starting with a premium, neighbourhood-based launch and expanding as we grow trusted supply and outcomes.",
+          areas_sub: "Starting in Westmount, Outremont, and NDG — neighbourhood-first, premium rollout.",
+
           cta_title: "Join the SummitCare launch",
-          cta_sub:
-            "Tell us who you are and we’ll reach out with next steps. Early access is limited during launch.",
-          cta_badge1: "Bilingual (EN/FR)",
-          cta_badge2: "Premium launch in Montreal",
-          cta_badge3: "Secure Stripe payments",
+          cta_sub: "Early access is limited during launch. Tell us who you are — we’ll reach out with next steps.",
+          cta_audiences: "Families · Providers · Clinics welcome",
           cta_name_label: "Name",
           cta_email_label: "Email",
           cta_role_label: "I am a",
           cta_role_family: "Family / Client",
           cta_role_provider: "Provider",
           cta_role_clinic: "Clinic",
-          cta_note_label: "Message (optional)",
           cta_btn: "Request early access",
-          cta_disclaimer:
-            "This form is a placeholder. Connect it to your waitlist endpoint (Formspree/Airtable/Google Forms).",
-          faq_1_q: "What kind of services are offered?",
-          faq_1_a:
-            "SummitCare focuses on non-medical support at home: tech help, mobility support, companionship, escort support, wellness coaching, and practical home help.",
-          faq_2_q: "Is SummitCare medical care?",
-          faq_2_a:
-            "No. SummitCare is not a medical service. We focus on non-medical continuity support that helps seniors stay safe and supported at home.",
-          faq_3_q: "How do providers join?",
-          faq_3_a:
-            "Providers can request access, complete onboarding, and publish their services and availability. Verification may apply depending on launch capacity.",
-          faq_4_q: "How do clinics participate?",
-          faq_4_a:
-            "Clinics can partner during launch to validate trusted providers and offer families a safe path to non-medical support. We keep this lightweight.",
+          cta_disclaimer: "This form is a placeholder. Connect it to your waitlist endpoint.",
+
           footer_area: "Montreal — Westmount · Outremont · NDG",
           footer_legal: "© YEAR SummitCare. All rights reserved.",
         },
+
         fr: {
           tagline: "Coaching. Caregiving. Confidence en vieillissant.",
-          nav_for: "Pour familles, intervenants, cliniques",
-          nav_trust: "Confiance & sécurité",
+          nav_for: "Pour qui",
+          nav_trust: "Confiance",
           nav_areas: "Zone de lancement",
           nav_cta: "Rejoindre",
+
           hero_pill: "Lancement à Montréal — Westmount · Outremont · NDG",
-          hero_h1a: "Soutien de confiance pour vieillir",
-          hero_h1b: "— pensé pour les familles et les intervenants.",
-          hero_sub:
-            "SummitCare relie les familles à des intervenants sélectionnés pour du soutien non médical à domicile — et permet aux cliniques de valider la qualité. Une expérience premium axée sur la confiance, la sécurité et la continuité.",
-          hero_primary: "Rejoindre le lancement",
-          hero_secondary: "Voir pour qui c’est fait",
+          hero_h1: "Soutien de confiance pour vieillir à domicile.",
+          hero_sub: "Relier familles, intervenants de confiance et cliniques locales — à Montréal.",
+          hero_sub2: "Soutien non médical. Conçu pour la dignité, la sécurité et la tranquillité d’esprit.",
+          hero_primary: "Rejoindre le lancement SummitCare",
+          hero_link_f: "Pour les familles",
+          hero_link_p: "Pour les intervenants",
+          hero_link_c: "Pour les cliniques",
           hero_badge1: "Bilingue (EN/FR)",
           hero_badge2: "Paiements sécurisés (Stripe)",
-          hero_badge3: "Intervenants vérifiés",
-          hero_card_title: "Ce que SummitCare apporte",
-          hero_card_sub: "Une place de marché premium de soutien non médical — conçue pour la confiance.",
-          hero_card_chip: "Phase lancement",
-          hero_point_1_label: "Pour les familles",
-          hero_point_1_value: "Trouver de l’aide fiable. Réserver avec confiance.",
-          hero_point_2_label: "Pour les intervenants",
-          hero_point_2_value: "Développer votre activité avec une demande structurée.",
-          hero_point_3_label: "Pour les cliniques",
-          hero_point_3_value: "Valider la qualité et prolonger la continuité.",
-          hero_services_label: "Types de soutien",
-          svc_1: "Aide techno",
-          svc_2: "Mobilité",
-          svc_3: "Compagnie",
-          svc_4: "Accompagnement",
-          svc_5: "Coaching bien-être",
-          svc_6: "Aide à domicile",
-          for_title: "Un lancement pensé pour trois publics",
-          for_sub:
-            "SummitCare est conçu comme un écosystème premium : les familles obtiennent un soutien fiable, les intervenants gagnent en visibilité, et les cliniques aident à valider la qualité.",
-          fam_title: "Pour les familles",
-          fam_chip: "Clients",
-          fam_body:
-            "Réservez un soutien sélectionné pour un parent ou un proche — avec une planification claire, un paiement sécurisé et un service respectueux.",
-          fam_1: "Découvrir des intervenants de confiance à proximité",
-          fam_2: "Réserver et gérer facilement les séances",
-          fam_3: "Paiement et communication sécurisés",
-          fam_4: "Expérience adaptée au foyer (réservation assistée)",
-          pro_title: "Pour les intervenants",
-          pro_chip: "Coachs & aidants",
-          pro_body:
-            "Rejoignez une place de marché premium conçue pour aider les intervenants de confiance à grandir avec une meilleure visibilité.",
-          pro_1: "Mettre en valeur vos services et votre expérience",
-          pro_2: "Publier vos disponibilités et recevoir des réservations",
-          pro_3: "Intégration professionnelle et options de validation",
-          pro_4: "Paiements fiables et soutien",
-          cli_title: "Pour les cliniques",
-          cli_chip: "Partenaires",
-          cli_body:
-            "Renforcez la continuité hors clinique en validant des intervenants de confiance et en offrant aux familles une voie sécurisée vers du soutien non médical.",
-          cli_1: "Valider des intervenants (signal de qualité)",
-          cli_2: "Offrir aux familles un parcours de recommandation fiable",
-          cli_3: "Prolonger la continuité entre les visites",
-          cli_4: "Modèle de partenariat léger",
-          trust_title: "Confiance & sécurité",
-          trust_sub:
-            "SummitCare est conçu autour de la confiance : intervenants sélectionnés, paiements sécurisés et expérience respectueuse pour les aînés et les familles.",
-          trust_1_title: "Sélection des intervenants",
-          trust_1_body: "Filtrage, références et garde-fous d’intégration pour maintenir la qualité.",
-          trust_2_title: "Validation clinique (optionnelle)",
-          trust_2_body: "Les cliniques peuvent valider des intervenants pour aider les familles à choisir.",
-          trust_3_title: "Paiements sécurisés",
-          trust_3_body: "Paiement Stripe et reçus pour transparence et sécurité.",
-          trust_4_title: "Expérience respectueuse",
-          trust_4_body: "Pensé pour les aînés : communication claire, réservation assistée, professionnalisme.",
+          hero_badge3: "Intervenants sélectionnés",
+
+          what_title: "Qu’est-ce que SummitCare?",
+          what_body:
+            "Une plateforme premium pour soutenir les aînés à domicile — reliant familles et intervenants locaux sélectionnés, avec validation clinique optionnelle.",
+          mini_1_label: "Familles",
+          mini_1_value: "Tranquillité",
+          mini_2_label: "Intervenants",
+          mini_2_value: "Visibilité",
+          mini_3_label: "Cliniques",
+          mini_3_value: "Continuité",
+
+          for_title: "Pour familles, intervenants et cliniques",
+          for_sub: "Trois acteurs. Un standard : la confiance.",
+          card_f_title: "Pour les familles",
+          card_f_body: "Trouver un soutien non médical fiable pour un parent — sans incertitude.",
+          card_p_title: "Pour les intervenants",
+          card_p_body: "Rejoindre une plateforme locale de confiance pour aidants et coachs professionnels.",
+          card_c_title: "Pour les cliniques",
+          card_c_body: "Prolonger la continuité hors clinique en validant des intervenants de confiance.",
+
+          trust_title: "Conçu sur la confiance",
+          trust_1_title: "Intervenants sélectionnés",
+          trust_1_body: "Sélection rigoureuse pour qualité et professionnalisme.",
+          trust_2_title: "Validation clinique optionnelle",
+          trust_2_body: "Une couche de confiance pour les familles qui la souhaitent.",
+          trust_3_title: "Expérience sécurisée",
+          trust_3_body: "Communication claire et paiements sécurisés via Stripe.",
+
           areas_title: "Lancement à Montréal",
-          areas_sub:
-            "Nous démarrons par un lancement premium par quartiers, puis nous étendrons au fur et à mesure que la confiance et l’offre grandissent.",
+          areas_sub: "Départ à Westmount, Outremont et NDG — déploiement premium, quartier par quartier.",
+
           cta_title: "Rejoignez le lancement SummitCare",
-          cta_sub:
-            "Dites-nous qui vous êtes et nous vous contacterons avec les prochaines étapes. L’accès anticipé est limité pendant le lancement.",
-          cta_badge1: "Bilingue (EN/FR)",
-          cta_badge2: "Lancement premium à Montréal",
-          cta_badge3: "Paiements Stripe sécurisés",
+          cta_sub: "Accès anticipé limité. Dites-nous qui vous êtes — nous vous contactons avec les prochaines étapes.",
+          cta_audiences: "Familles · Intervenants · Cliniques bienvenus",
           cta_name_label: "Nom",
           cta_email_label: "Courriel",
           cta_role_label: "Je suis",
           cta_role_family: "Famille / Client",
           cta_role_provider: "Intervenant",
           cta_role_clinic: "Clinique",
-          cta_note_label: "Message (optionnel)",
           cta_btn: "Demander l’accès",
-          cta_disclaimer:
-            "Formulaire placeholder. Branchez-le à votre endpoint (Formspree/Airtable/Google Forms).",
-          faq_1_q: "Quels services sont offerts?",
-          faq_1_a:
-            "SummitCare se concentre sur le soutien non médical à domicile : aide techno, mobilité, compagnie, accompagnement, coaching bien-être et aide pratique.",
-          faq_2_q: "SummitCare est-il un service médical?",
-          faq_2_a:
-            "Non. SummitCare n’est pas un service médical. Nous visons le soutien non médical qui aide les aînés à rester en sécurité à domicile.",
-          faq_3_q: "Comment un intervenant rejoint-il?",
-          faq_3_a:
-            "Les intervenants peuvent demander l’accès, compléter l’intégration, puis publier services et disponibilités. Une validation peut s’appliquer selon la capacité du lancement.",
-          faq_4_q: "Comment une clinique participe-t-elle?",
-          faq_4_a:
-            "Les cliniques peuvent devenir partenaires au lancement pour valider des intervenants et offrir aux familles un parcours sécurisé. C’est volontairement léger.",
+          cta_disclaimer: "Formulaire placeholder. Branchez-le à votre endpoint de liste d’attente.",
+
           footer_area: "Montréal — Westmount · Outremont · NDG",
           footer_legal: "© YEAR SummitCare. Tous droits réservés.",
         },
