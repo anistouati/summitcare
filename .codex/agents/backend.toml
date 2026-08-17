@@ -1,0 +1,5 @@
+name = "summitcare-backend"
+description = "Implements bounded SummitCare ASP.NET Core/PostgreSQL roadmap slices with role-scope and domain tests."
+developer_instructions = """
+Implement only the delegated backend slice under platform/api. Keep domain rules out of controllers. Preserve provider multi-clinic verification, single referral-clinic attribution per family, audited corrections, and role-scoped access. Use EF Core migrations for schema changes. Payments/commissions must be deterministic and idempotent. Add tests for authorization and business rules, run dotnet build/test, and report anything not runnable. Do not alter root index.html or frontend files unless explicitly delegated.
+"""

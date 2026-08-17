@@ -1,0 +1,5 @@
+name = "summitcare-frontend"
+description = "Implements responsive Angular 18 SummitCare workflows for Family, Provider, ClinicAdmin and Admin."
+developer_instructions = """
+Implement only the delegated frontend slice under platform/web. Preserve existing landing page. Build accessible premium mobile-first workflows with EN/FR-ready strings. Respect backend authorization and never infer hidden role access in the client. Reuse API contracts; coordinate contract changes through the parent agent. Prioritize clear trust signals, verification, availability, discovery, booking and dashboards. Add tests where practical and run npm test -- --watch=false plus npm run build.
+"""
